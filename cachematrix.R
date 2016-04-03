@@ -3,16 +3,16 @@
 
 ## Write a short comment describing this function
 
-makeCacheMatrix <- function(mtrix = matrix()) {
+makeCacheMatrix <- function(value_matrix = matrix()) {
   solved <- NULL
   
   setmatrix <- function(m) {
-    mtrix <<- m
+    value_matrix <<- m
     solved <<- NULL
   }
   
   getmatrix <- function() {
-    mtrix
+    value_matrix
   }
 
   setsolve <- function(solved) {
